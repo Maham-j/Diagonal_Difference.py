@@ -23,7 +23,6 @@ def diagonalDifference(arr):
     return result
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')  # Open file for writing
     
     n = int(input().strip())  # Read matrix size
     
@@ -35,6 +34,4 @@ if __name__ == '__main__':
     
     result = diagonalDifference(arr)  # Calculate diagonal difference
     
-    fptr.write(str(result) + '\n')  # Write result to file
-    
-    fptr.close()  # Close file
+    print(result)
